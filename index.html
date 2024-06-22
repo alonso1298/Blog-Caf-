@@ -17,8 +17,6 @@
      <link rel="preload" href="css/style.css" as="style">
      <link rel="stylesheet" href="css/style.css">
 
-     <link rel="preload" href="img/blog1.jpg" as="image">
-
 </head>
 <body>
     
@@ -50,7 +48,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog" loading="lazy"> <!--loading="lazy" quiere decir que una ve lleguemos al elemteno este lo descarga-->
+                    <picture> <!--picture soporta varios formatos de imagenes y depende del navegador va a cargar el formato que decidieron implementar-->
+                        <source  srcset="img/blog1.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog1.jpg" alt="imagen blog" loading="lazy"> <!--loading="lazy" quiere decir que una ve lleguemos al elemteno este lo descarga-->
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -62,7 +63,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog" loading="lazy">
+                    <picture> 
+                        <source srcset="img/blog2.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog2.jpg" alt="imagen blog" loading="lazy"> 
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -74,7 +78,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog" loading="lazy">
+                    <picture> 
+                        <source srcset="img/blog3.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog3.jpg" alt="imagen blog" loading="lazy"> 
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
